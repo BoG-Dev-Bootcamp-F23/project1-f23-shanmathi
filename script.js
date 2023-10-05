@@ -26,6 +26,11 @@ async function displayPoke(i) {
     pokeName.textContent = data.name; // Set the text content to display the name
     nameContainer.innerHTML = "";
     nameContainer.appendChild(pokeName);
+    
+    const pokemonType = document.getElementById("pokemon-type");
+    const types = data.types.map(type => type.type.name);
+    pokemonType.textContent = `Type: ${types.join(', ')}`; // Display types separated by a comma
+
 
     moveList.innerHTML = '';
 
@@ -63,14 +68,14 @@ leftButton.addEventListener("click", () => {
 
 infoButton.addEventListener("click", function() {
   output.textContent = "Info";
-  infoButton.classList.toggle("green-button");
+  infoButton.classList.add("green-button");
   movesButton.classList.remove("green-button");
 
 });
 
 movesButton.addEventListener("click", function() {
   output.textContent = "Moves";
-  movesButton.classList.toggle("green-button");
+  movesButton.classList.add("green-button");
   infoButton.classList.remove("green-button");
 
 });
