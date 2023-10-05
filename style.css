@@ -135,3 +135,8 @@ button {
     margin-top: 1200px;
     list-style-type: none;
 }
+.info-moves-btn{
+        display: flex;
+        justify-content: space-between; /* This will create space between the buttons */
+        margin-top: 20px; /* Add some top margin for spacing */
+}
