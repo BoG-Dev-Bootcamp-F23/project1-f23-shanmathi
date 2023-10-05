@@ -131,10 +131,14 @@ button {
     border: none;
 }
 
-.moves-list{
-    margin-top: 1200px;
+.moves-list {
+    margin-top: 20px; /* Remove previous margin */
+    margin-bottom: 0; /* Remove previous margin */
     list-style-type: none;
-}
+    overflow-y: scroll; /* Add vertical scrollbar */
+    max-height:370px; /* Set a maximum height to limit the height of the moves list */
+  }
+  
 .info-moves-btn{
     display: flex;
     justify-content: space-between; /* This will create space between the buttons */
