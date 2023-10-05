@@ -26,11 +26,16 @@ async function displayPoke(i) {
     pokeName.textContent = data.name; // Set the text content to display the name
     nameContainer.innerHTML = "";
     nameContainer.appendChild(pokeName);
-    
-    const pokemonType = document.getElementById("pokemon-type");
-    const types = data.types.map(type => type.type.name);
-    pokemonType.textContent = `Type: ${types.join(', ')}`; // Display types separated by a comma
 
+    const typeContainer = document.getElementById("type-bubbles");
+    typeContainer.innerHTML = ''; // Clear previous type bubbles
+
+    data.types.forEach(type => {
+      const typeBubble = document.createElement('div');
+      typeBubble.classList.add('type-bubble');
+      typeBubble.textContent = type.type.name;
+      typeContainer.appendChild(typeBubble);
+    });
 
     moveList.innerHTML = '';
 

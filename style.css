@@ -136,7 +136,31 @@ button {
     list-style-type: none;
 }
 .info-moves-btn{
-        display: flex;
-        justify-content: space-between; /* This will create space between the buttons */
-        margin-top: 20px; /* Add some top margin for spacing */
+    display: flex;
+    justify-content: space-between; /* This will create space between the buttons */
+    margin-top: 20px; /* Add some top margin for spacing */
 }
+
+.poke-type {
+    margin-left: 170px;
+    margin-bottom: 20px;
+    width: 300px;
+    display: flex;
+    flex-direction: column; /* Stack bubbles vertically */
+  }
+  
+  .type-bubble-container {
+    display: flex;
+    flex-wrap: wrap; /* Wrap the bubbles to the next line when they don't fit */
+  }
+  
+  .type-bubble {
+    background-color: #97a06c;
+    border-radius: 5px;
+    color: #000000;
+    padding: 5px 10px;
+    margin: 5px; /* Adjust the spacing between bubbles */
+    font-size: 14px; /* Adjust the font size as needed */
+  }
+
+  
