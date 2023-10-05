@@ -1,0 +1,137 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; 
+    margin: 0;
+    padding: 20px; 
+}
+.button-container {
+    align-self: flex-end;
+    margin-top: auto; 
+    position: absolute;
+    bottom: 0px;
+}
+
+.arrow-button {
+    font-size: 24px;
+    background-color: #d9dcdc;
+    color: #000000;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin: 5px;
+    margin-left: 170px;
+    cursor: pointer;
+    outline: none;
+}
+
+h1 {
+    font-size: 60px;
+    text-align: center;
+    
+}
+.pokemon-container img{
+    width: 200px; /* Adjust the width to your desired size */
+    height: 200px;
+}
+
+.poke-name{
+    border-radius: 10px;
+    background-color: #d9dcdc;
+    border: 1px solid #000000; 
+    color: #000000;
+    margin-left: 170px; 
+    margin-bottom: 20px;
+    margin-top: -150px;
+    width: 300px; 
+    height: 40px;
+    display: flex; 
+    align-items: center;
+    justify-content: center; 
+
+}
+
+.container {
+    display: flex;
+    justify-content: flex-start; /* Align items to the top */
+    align-items: flex-start; /* Align items to the top */
+    margin: 0px;
+    padding: 20px;
+}
+
+.frame {
+    width: 300px;
+    height: 300px;
+    border: 3px solid #000000;
+    background-color: transparent;
+    margin-bottom: 0;
+    margin-right: 20px; /* Add space between frame and info-moves */
+    text-align: center;
+    display: flex;
+    margin-left: 150px;
+    align-items: center;
+    justify-content: center;
+}
+
+.info-moves-container{
+    width: 300px;
+    height: 400px;
+    background-color: #d9dcdc;
+    color: #000000;
+    margin-left: auto;
+    margin-top: 20px;
+    margin-right: 150px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow-y: scroll;
+}
+
+button {
+    margin: 10px;
+    padding: 5px 10px;
+    font-size: 16px;
+}
+
+.right{
+    margin-left: auto;
+    margin-right: 150px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+#output{
+    text-align: center; /* Center the text horizontally */
+    color: black;
+    font-size: 30px;
+}
+
+#info-button{
+    text-align: center; /* Center-align the buttons */
+    margin-top: 20px; 
+    border-radius: 10px;
+    border: none;
+}
+#moves-button{
+    text-align: center; /* Center-align the buttons */
+    margin-top: 20px; 
+    border-radius: 10px;
+    border: none;
+}
+.green-button {
+    background-color: rgb(129, 255, 129);
+    color: black; /* Change text color to white for better visibility */
+    border-radius: 10px;
+    border: none;
+}
+
+.moves-list{
+    margin-top: 1200px;
+    list-style-type: none;
+}
