@@ -4,20 +4,33 @@ body {
     flex-direction: column;
     justify-content: flex-start; 
     margin: 0;
-    padding: 20px; 
-    align-items: center; /* Center content horizontally */
+    padding: 20px;
+    align-items: center;
+}
 
+.left{
+    margin-left: 80px;
+    margin-right: 100px;
+}
+
+.right{
+    margin-left: 80px;
+    margin-right: 150px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
 }
 .button-container {
     align-self: flex-start;
     margin-left: auto;
     align-items: center;
-    justify-content: flex-start; 
+    justify-content: flex-start;
     position: relative;
     bottom: 0px;
     top: 5px;
-    display: flex; /* Ensure buttons are horizontally centered */
-
+    display: flex;
 }
 
 .arrow-button {
@@ -37,36 +50,35 @@ body {
 h1 {
     font-size: 60px;
     text-align: center;
-    
 }
+
 .pokemon-container img{
-    width: 200px; /* Adjust the width to your desired size */
+    width: 200px;
     height: 200px;
 }
 
 .poke-name{
     border-radius: 10px;
     background-color: #d9dcdc;
-    border: 1px solid #000000; 
+    border: 1px solid #000000;
     color: #000000;
-    margin-left: 160px; 
+    margin-left: 160px;
     margin-bottom: 20px;
-    margin-top: 70px;
-    width: 260px; 
-    font-size: 20px; /* Increase font size */
-    padding: 10px 20px; /* Increase padding to make buttons bigger */
+    margin-top: 50px;
+    width: 260px;
+    font-size: 20px;
+    padding: 10px 20px;
     font-family: Arial, sans-serif;
     height: 40px;
-    display: flex; 
+    display: flex;
     align-items: center;
-    justify-content: center; 
-
+    justify-content: center;
 }
 
 .container {
     display: flex;
-    justify-content: flex-start; /* Align items to the top */
-    align-items: flex-start; /* Align items to the top */
+    justify-content: flex-start;
+    align-items: flex-start;
     margin: 0px;
     padding: 20px;
 }
@@ -77,9 +89,10 @@ h1 {
     border: 3px solid #000000;
     background-color: transparent;
     margin-bottom: 0;
-    margin-right: 10px; /* Add space between frame and info-moves */
+    margin-right: 10px;
     text-align: center;
     display: flex;
+    margin-top: -20px;
     margin-left: auto;
     align-items: center;
     justify-content: center;
@@ -90,116 +103,101 @@ h1 {
     height: 400px;
     background-color: #d9dcdc;
     color: #000000;
-    margin-left: 10 px;
+    margin-left: 10px;
     margin-top: 20px;
-    margin-right: 20px; /* Adjust this margin to match the left frame */
+    margin-right: 20px;
     text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-start; /* Align content to the top */
+    justify-content: flex-start;
     overflow-y: scroll;
-  }
+}
 
 button {
     margin: 10px;
     padding: 5px 10px;
     font-size: 16px;
 }
-.left{
-    margin-left: 80px;
-    margin-right: 60px;
-}
-
-.right{
-    margin-left: 60px;
-    margin-right: 150px;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-}
 
 #output{
-    text-align: center; /* Center the text horizontally */
+    text-align: center;
     color: black;
     font-size: 25px;
     font-family: Arial, sans-serif;
     font-weight: bold;
-
 }
 
 #info-button{
-    text-align: center; /* Center-align the buttons */
-    margin-top: 20px; 
+    text-align: center;
+    margin-top: 20px;
     border-radius: 10px;
     border: none;
 }
 #moves-button{
-    text-align: center; /* Center-align the buttons */
-    margin-top: 20px; 
+    text-align: center;
+    margin-top: 20px;
     border-radius: 10px;
     border: none;
 }
 .green-button {
     background-color: rgb(129, 255, 129);
-    color: black; /* Change text color to white for better visibility */
+    color: black;
     border-radius: 10px;
     border: none;
 }
 
 .moves-list {
-    margin-top: 20px; /* Remove previous margin */
-    margin-bottom: 0; /* Remove previous margin */
+    margin-top: 20px;
+    margin-bottom: 0;
     text-align: left;
     list-style-type: none;
     margin-left: 0;
     line-height: 1.5;
     font-size: 20px;
-    overflow-y: scroll; /* Add vertical scrollbar */
-    max-height: 370px; /* Set a maximum height to limit the height of the moves list */
-  }
+    overflow-y: scroll;
+    max-height: 370px;
+}
 
 .info-list{
-    margin-top: 0px; /* Remove previous margin */
-    margin-bottom: 0; /* Remove previous margin */
+    margin-top: 0px;
+    margin-bottom: 0;
     text-align: left;
     list-style-type: none;
     margin-left: 0;
     font-size: 20px;
     margin-left: 0;
     line-height: 0.5;
-    overflow-y: scroll; /* Add vertical scrollbar */
-    max-height: 370px; }
+    overflow-y: scroll;
+    max-height: 370px;
+}
 
 .info-list li {
-    margin: 0; /* Remove margin between list items */
-    padding: 0; /* Remove padding between list items */
+    margin: 0;
+    padding: 0;
+}
 
-    }
-  
 .info-moves-btn{
     display: flex;
     font-family: Arial, sans-serif;
     font-weight: bold;
-    justify-content: space-between; /* This will create space between the buttons */
-    margin-top: 20px; /* Add some top margin for spacing */
+    justify-content: space-between;
+    margin-top: 20px;
 }
+
 #info-button,
 #moves-button {
-  font-size: 20px; /* Increase font size */
-  padding: 10px 20px; /* Increase padding to make buttons bigger */
-  font-family: Arial, sans-serif;
+    font-size: 20px;
+    padding: 10px 20px;
+    font-family: Arial, sans-serif;
 }
 
 #left-button{
     margin-right: 2px;
-
 }
+
 #right-button{
     margin-left: 2px;
-
 }
 
 .poke-type {
@@ -207,21 +205,19 @@ button {
     margin-bottom: 20px;
     width: 300px;
     display: flex;
-    flex-direction: column; /* Stack bubbles vertically */
-  }
-  
-  .type-bubble-container {
+    flex-direction: column;
+}
+
+.type-bubble-container {
     display: flex;
-  }
-  
-  .type-bubble {
+}
+
+.type-bubble {
     background-color: #97a06c;
     border-radius: 5px;
     color: #000000;
-    width:fit-content;
+    width: fit-content;
     padding: 5px 10px;
-    margin: 5px; /* Adjust the spacing between bubbles */
-    font-size: 14px; /* Adjust the font size as needed */
-  }
-
-  
+    margin: 5px;
+    font-size: 14px;
+}
