@@ -210,8 +210,8 @@ button {
 
 .type-bubble-container {
     display: flex;
-    flex-direction: row; /* Display bubbles horizontally */
-    flex-wrap: wrap; /* Allows bubbles to wrap to the next line if there's not enough space */
+    flex-direction: row; 
+    flex-wrap: wrap;
     justify-content: flex-start;
 }
 
@@ -221,8 +221,8 @@ button {
     width: fit-content;
     padding: 5px 10px;
     margin: 5px;
-    flex-wrap: wrap; /* Allows bubbles to wrap to the next line if there's not enough space */
-    flex-direction: row; /* Display bubbles horizontally */
+    flex-wrap: wrap; 
+    flex-direction: row; 
     font-size: 14px;
     white-space: nowrap;
 }
