@@ -1,3 +1,5 @@
+Demo Link: https://youtu.be/8x0vWKZCFcM
+
 # Project 1 — Mini Pokédex
 
 ## Description
